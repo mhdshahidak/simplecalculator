@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <!-- <form> -->
+                <tr>
+                    <td>Enter first number:</td>
+                    <td ><input type="number" id="first"></td>
+                </tr>
+               
+                <tr>
+                    <td>Enter second number:</td>
+                    <td><input type="number" id="second"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><button onclick="add()">+</button>
+                    <button onclick="sub()">-</button>
+                    <button onclick="mul()">*</button>
+                    <button onclick="div()">/</button></td>
+                </tr>
+                <tr>
+                   
+                    <td>Result</td>
+                    <td><input type="number" id="result"></td>
+                </tr>
+
+            <!-- </form> -->
+        </table>
+    </div>
+
+
+    <script>
+
+
+
+function add(){
+    var a=document.getElementById("first").value
+    var b=document.getElementById("second").value
+    var sum=parseInt(a)+parseInt(b)
+    document.getElementById("result").value=sum
+
+}
+
+function sub(){
+    var a=document.getElementById("first").value
+    var b=document.getElementById("second").value
+    var sub=parseInt(a)-parseInt(b)
+    document.getElementById("result").value=sub
+
+}
+
+function mul(){
+    var a=document.getElementById("first").value
+    var b=document.getElementById("second").value
+    var mul=parseInt(a)*parseInt(b)
+    document.getElementById("result").value=mul
+
+}
+function div(){
+    var a=document.getElementById("first").value
+    var b=document.getElementById("second").value
+    var div=parseInt(a)/parseInt(b)
+    document.getElementById("result").value=div
+
+}
+
+
+    </script>
+</body>
+</html>
